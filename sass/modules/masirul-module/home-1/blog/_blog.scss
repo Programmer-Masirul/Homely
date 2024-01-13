@@ -1,0 +1,34 @@
+  // START:: LATEST BLOG
+  .blog-area {
+    .categories{
+      padding: 20px 30px;
+      border-top: 5px solid $primary-color;
+      border-left: 5px solid $primary-color;
+      border-radius: 10px; 
+      
+      .secondary-theme-btn{
+        background: transparent;
+        border: 1px solid $secondary-color;
+        color: $gray;
+        padding: 8px 12px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: inline-block;
+        text-align: center;
+
+        &:hover{ 
+          background: $black-2;
+          color: $white;
+        }
+      }
+
+    }
+
+    .blog-inner-wrapper {  
+      .single-post {  
+        width: auto; 
+        margin: 0 auto;
+      }
+    }
+
+  }

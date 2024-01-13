@@ -105,8 +105,27 @@
       }
     }
 
+    @include lg{
+      padding: 0 70px; 
+      .content { 
+        .title {
+          font-size: 20px;
+          line-height: 25px; 
+        }
+        .desc {
+          font-size: 15px;
+          line-height: 20px; 
+        }
+      }
+      .social {  
+        i {
+          font-size: 15px;
+        }
+      }
+    }
+
     @include sm{
-      padding: 0 70px;
+      padding: 0 100px;
       .content {
         width: 100%;
         padding: 10px 20px; 
@@ -130,11 +149,34 @@
       }
     }
 
-    @include lg{
-      padding: 0 65px; 
-    }
+
   }
   &:hover {
+    .content-wrapper {
+      .content {
+        margin-left: -160px;
+        z-index: 1;
+      }
+      .social {
+        margin-right: -165px;
+        z-index: 0;
+      }
+    }
+
+    @include lg{
+    .content-wrapper { 
+      .content {
+        margin-left: -140px;
+        z-index: 1;
+      }
+      .social {
+        margin-right: -150px;
+        z-index: 0;
+      }
+    }
+    }
+
+    @include sm{
     .content-wrapper {
       .content {
         margin-left: -130px;
@@ -142,18 +184,6 @@
       }
       .social {
         margin-right: -135px;
-        z-index: 0;
-      }
-    }
-
-    @include sm{
-    .content-wrapper {
-      .content {
-        margin-left: -110px;
-        z-index: 1;
-      }
-      .social {
-        margin-right: -115px;
         z-index: 0;
       }
     }
