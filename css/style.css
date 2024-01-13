@@ -7441,21 +7441,23 @@ ul.children {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 36px;
+  padding: 0 90px;
   width: 100%;
   bottom: -36px;
   z-index: 2;
 }
 .team-member-card .content-wrapper .content {
   width: 100%;
-  padding: 30px 20px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #f2c94c;
+  margin-bottom: -50px;
   z-index: 1;
   gap: 5px;
+  transition: all 0.5s ease-out;
 }
 .team-member-card .content-wrapper .content .title {
   font-size: 24px;
@@ -7469,19 +7471,20 @@ ul.children {
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  color: #c7cdda;
+  color: #f3f4f8;
   font-family: "Teko", sans-serif;
   margin: 0;
 }
 .team-member-card .content-wrapper .social {
   background: #c6b06e;
-  padding: 18px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 22px;
   width: 94%;
-  margin-top: -60px;
+  margin-bottom: 0px;
+  margin-right: -50px;
   z-index: -1;
   transition: all 0.5s ease-out;
 }
@@ -7493,15 +7496,64 @@ ul.children {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
+.team-member-card .content-wrapper .social a:hover i {
+  color: #151515;
+}
 .team-member-card .content-wrapper .social i {
   color: #ffffff;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+@media (max-width: 767.98px) {
+  .team-member-card .content-wrapper {
+    padding: 0 70px;
+  }
+  .team-member-card .content-wrapper .content {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: -50px;
+  }
+  .team-member-card .content-wrapper .content .title {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .team-member-card .content-wrapper .content .desc {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .team-member-card .content-wrapper .social {
+    margin-bottom: 0px;
+    margin-right: -50px;
+  }
+  .team-member-card .content-wrapper .social i {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .team-member-card .content-wrapper {
+    padding: 0 65px;
+  }
 }
 .team-member-card:hover .content-wrapper .content {
+  margin-left: -130px;
   z-index: 1;
 }
 .team-member-card:hover .content-wrapper .social {
-  margin-top: 0;
+  margin-right: -135px;
   z-index: 0;
+}
+@media (max-width: 767.98px) {
+  .team-member-card:hover .content-wrapper .content {
+    margin-left: -110px;
+    z-index: 1;
+  }
+  .team-member-card:hover .content-wrapper .social {
+    margin-right: -115px;
+    z-index: 0;
+  }
 }
 @media (max-width: 767.98px) {
   .team-member-card {

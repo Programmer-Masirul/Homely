@@ -43,20 +43,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 36px;
+    padding: 0 90px;
     width: 100%;
     bottom: -36px;
     z-index: 2;
     .content {
       width: 100%;
-      padding: 30px 20px;
+      padding: 10px 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       background: $primary-color;
+      margin-bottom: -50px;
       z-index: 1;
       gap: 5px;
+      transition: all 0.5s ease-out;
 
       .title {
         font-size: 24px;
@@ -70,48 +72,91 @@
         font-size: 16px;
         line-height: 28px;
         font-weight: 400;
-        color: $white-100;
+        color: $gray-100;
         font-family: $heading-font;
         margin: 0;
       }
     }
     .social {
       background: $orange-color;
-      padding: 18px 0;
+      padding: 10px 0;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 22px;
       width: 94%;
-      margin-top: -60px;
+      margin-bottom: 0px;
+      margin-right: -50px;
       z-index: -1;
       transition: all 0.5s ease-out;
       a {
         &:hover {
           color: $primary-color;
-          @include transition
-
-
-
-
-
-          ;
+          @include transition;
+              
+          i {
+            color: $black;
+          }
         }
       }
       i {
         color: $white;
+        @include transition;
       }
+    }
+
+    @include sm{
+      padding: 0 70px;
+      .content {
+        width: 100%;
+        padding: 10px 20px; 
+        margin-bottom: -50px; 
+  
+        .title {
+          font-size: 14px;
+          line-height: 22px; 
+        }
+        .desc {
+          font-size: 10px;
+          line-height: 18px; 
+        }
+      }
+      .social { 
+        margin-bottom: 0px;
+        margin-right: -50px; 
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+
+    @include lg{
+      padding: 0 65px; 
     }
   }
   &:hover {
     .content-wrapper {
       .content {
+        margin-left: -130px;
         z-index: 1;
       }
       .social {
-        margin-top: 0;
+        margin-right: -135px;
         z-index: 0;
       }
+    }
+
+    @include sm{
+    .content-wrapper {
+      .content {
+        margin-left: -110px;
+        z-index: 1;
+      }
+      .social {
+        margin-right: -115px;
+        z-index: 0;
+      }
+    }
     }
   }
   @include sm {
