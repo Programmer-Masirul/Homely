@@ -1,0 +1,38 @@
+.icon-card {
+    &.style-four {
+        padding: 0px;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+
+        .icon {
+            width: 72px;
+            height: 72px;
+            background: $primary-color;
+            border-radius: 50px;
+            position: absolute;
+            top: 60%;
+            left: 80%;
+            transform: translate(-60%, -80%);
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $white;
+            }
+        }
+        .content {
+            width: 100%;
+            padding: 55px 30px 30px 30px;
+            background: $gray-50;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0px 8px solid $black;
+        }
+    }
+}

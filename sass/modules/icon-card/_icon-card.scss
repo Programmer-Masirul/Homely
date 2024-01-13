@@ -1,0 +1,104 @@
+.icon-card {
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    .inner-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 30px 26px 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        .icon{
+            width: 86px;
+            height: 86px;
+            border-radius: 5px;
+            background-color: $primary-color;
+            padding: 18px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            .title{
+                font-family: $heading-font;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 35px;
+                color: $black;
+                margin-bottom: 0;
+            }
+            .desc{
+                font-family: $body-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 29px;
+                margin-bottom: 0;
+                height: 58px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .image-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(100%);
+        @include transition;
+        img{
+            width: 100%;
+        }
+        .image-text{
+            display: flex;
+            justify-content: space-between;
+            background-color: $primary-color;
+            padding: 10px 22px;
+            margin-right: 52px;
+            margin-top: -54px;
+            z-index: 1;
+            position: relative;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(-100%);
+            @include transition;
+            .title{
+                color: $white;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+            a{
+                i{
+                    color: $white;
+                }
+            }
+        }
+    }
+    @include sm {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &:hover {
+        .image-wrapper{
+            height: 100%;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            @include transition;
+            .image-text{
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 1;
+                @include transition;
+            }
+        }
+    }
+}

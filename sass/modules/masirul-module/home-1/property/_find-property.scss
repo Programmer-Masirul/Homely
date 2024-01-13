@@ -1,0 +1,41 @@
+.find-property{
+
+    .card-wrapper{
+        border-radius: 20px;
+        .card-image{
+            position: relative; 
+            .img{
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));  
+                    pointer-events: none;  
+                  }
+            }
+            .image-content{
+                position: absolute;
+                top: 30%;
+                left: 10%;
+    
+                h4{
+                color: $white;
+                }
+    
+                h6{
+                color: $white;
+                }
+            }
+        }
+
+        &:hover{
+        transform: translateY(-10px);
+        }
+
+    }
+}

@@ -1,0 +1,39 @@
+.icon-card {
+    &.style-2 {
+        margin-top: 40px;
+
+        .inner-wrapper {
+            padding: 0;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+
+            .icon {
+                width: 71px;
+                height: 71px;
+                background-color: $primary-color;
+                @include transition;
+            }
+
+            .content {
+                text-align: start;
+
+                .desc {
+                    height: auto;
+                }
+            }
+        }
+
+        &:hover {
+            .icon {
+                background-color: $black;
+            }
+
+            .content {
+                .title {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+
+/*--------------------------------------------------------------
+# Growth section start
+--------------------------------------------------------------*/
+
+/* Genaral */
+
+
+
+.growth{
+  margin-top:100px;
+  margin-bottom: 60px;
+    @include md {
+        min-height: 1650px;
+    }
+    
+    @include rmaxwd(575.97) {
+        min-height: 1500px;
+    }
+
+    
+  .growth-content-header{
+    padding:2rem;
+    @include sm{
+      padding: .5rem;
+    }
+
+    .red-bold{
+        font-family: 'Teko';
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ED3B3B;
+      }
+      .growth-description{
+        font-family: 'Manrope';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #666666;
+      }
+
+      .growth-icon-area{
+        .growth-icon {
+            .icon{
+                background: $primary-color;
+                padding: 25px;
+              }
+              .text {
+                h5{
+                    font-family: 'Teko';
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #151515;
+                  }
+                  p{
+                    font-family: 'Manrope';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #666666;
+                  }
+              }
+        }
+      }
+  }
+
+  .main-container{
+    position: relative;
+    .circle{
+        left: 0;
+        text-align: left;
+        margin-top:100px;
+        @include sm{
+         margin-top:50px;
+         text-align: center;
+        }
+    
+        .bg{
+            background: $primary-color;
+            border-radius: 50%;
+        }
+      }
+      .inner-div {
+        position: absolute;
+        right: 0px;
+        left: auto;
+        top: 50px;
+        z-index: 1; 
+        @include sm{
+        .img-none{
+          display: none;
+        }
+        }
+      }
+  }
+
+
+}
+  

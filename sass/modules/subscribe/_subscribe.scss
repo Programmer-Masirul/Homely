@@ -1,0 +1,23 @@
+.subscribe{
+    padding: 50px 10px;
+    background: #000;
+    .subscribe-wrapper{
+        padding: 50px 30px;
+        background: $white;
+        border-radius: 5px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+
+    .subscribe-area-content{  
+        .form-control {
+            width: 350px;
+            padding: 15px 25px;
+            background: $gray-50;
+            outline: 0;
+        }
+      
+    }
+
+    }
+}

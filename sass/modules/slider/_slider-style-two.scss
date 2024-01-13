@@ -1,0 +1,96 @@
+.slider-area {
+  &.style-2 {
+    position: relative;
+
+    .social-share {
+      @include rmaxwd(991) {
+        display: none;
+      }
+    }
+    .single-slider {
+      position: relative;
+
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        height: 720px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        padding-bottom: 0;
+      }
+      @include sm {
+        height: 500px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-bottom: 290px solid $primary-color;
+        border-left: 117px solid transparent;
+        z-index: 1;
+
+        @include sm {
+          display: none;
+        }
+      }
+    }
+    .slider-wrapper {
+      .container {
+        position: relative;
+      }
+      .slider-shape-top-triangle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $sky-color;
+        top: 0;
+        left: -100%;
+        margin-left: -228px;
+        transform: skewX(-20deg);
+
+        @include md {
+          left: -80%;
+        }
+      }
+      .slider-shape-bottom-left {
+        position: absolute;
+        width: 215px;
+        height: 130px;
+        background: $sky-color;
+        bottom: 0;
+        left: -140px;
+        transform: skewX(-22deg);
+
+        @include md {
+          display: none;
+        }
+        @include sm {
+          display: none;
+        }
+      }
+      .slider-image {
+        position: relative;
+        z-index: 2;
+        float: right;
+        margin-top: inherit;
+        animation: MoveLeftRight 2s linear infinite alternate;
+        right: -50px;
+        img {
+          float: right;
+        }
+        &:before {
+          position: absolute;
+          content: "";
+          width: 520px;
+          height: 2000px;
+          background-color: $orange-color;
+          border-radius: 0;
+          top: -1000px;
+          transform: skewX(-22deg);
+          z-index: -1;
+          right: -160px;
+        }
+      }
+    }
+
+  }
+}
