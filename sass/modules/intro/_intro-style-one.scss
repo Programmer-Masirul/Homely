@@ -1,0 +1,139 @@
+.intro-area {
+  overflow: hidden;
+  position: relative;
+
+  .single-intro {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding-top: 255px;
+    padding-bottom: 231px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+      height: 850px;
+      padding-top: 210px;
+      padding-bottom: 80px;
+    }
+    @include sm {
+      padding-top: 200px;
+      height: 1150px;
+    }
+    .intro-content {
+      position: relative;
+      @include sm {
+        text-align: center;
+      }
+      .shape-1{
+        position: absolute;
+        right: 0px;
+        top: -134px;
+      }
+
+      .intro-short-title {
+        font-family: $heading-font;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 21px;
+        text-transform: uppercase;
+        color: $white;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+
+        @include lg {
+          font-size: 18px;
+        }
+        @include sm {
+          font-size: 16px;
+        }
+      }
+      .intro-title {
+        font-family: $heading-font;
+        font-weight: 600;
+        font-size: 57px;
+        color: $white;
+        line-height: 80px;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: 992px) and (max-width: 1400px){
+          font-size: 55px;
+          line-height: 64px;
+        }
+
+        @include lg {
+          font-size: 50px;
+          line-height: 58px;
+        }
+        @include md {
+          font-size: 47px;
+          line-height: 53px;
+        }
+        @include sm {
+          font-size: 42px;
+          line-height: 44px;
+          margin-bottom: 20px;
+        }
+        span{
+          display: inline-block;
+          color: $primary-color;
+          text-decoration: none;
+        }
+      }
+      .intro-short-desc {
+        font-size: 24px;
+        color: $white;
+        line-height: 36px;
+
+        @include lg {
+          font-size: 18px;
+          line-height: 32px;
+        }
+        @include md {
+          font-size: 18px;
+          line-height: 32px;
+        }
+        @include sm {
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+      .intro-btn-wrapper {
+        margin-top: 50px;
+
+        @include sm {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .card-wrapper{
+      margin: 0 auto;
+    .card{
+    .icon-box{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 30px 0px; 
+
+      .icon i{
+        font-size: 50px;
+      }
+
+      .option {  
+
+        option{
+          padding: 50px!important;
+          margin: 10px 0px;
+        }
+      }
+
+    }
+    }
+    }
+
+  }
+}

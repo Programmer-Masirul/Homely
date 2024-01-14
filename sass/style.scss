@@ -64,15 +64,15 @@
 @import "modules/meanmenu";
 @import "partials/menu-sidebar";
 
-// 4.Slider Section
-@import "modules/slider/slider-style-one";
-@import "modules/slider/slider-style-two";
-@import "modules/slider/slider-style-three";
+// 4.Intro Section
+@import "modules/intro/intro-style-one"; 
 
 
-// 5.Info Card 
+// 5.Featured Card 
+@import "modules/cards/card-wrapper-style-one";
+@import "modules/cards/card-wrapper-style-two";
 
-// @import "modules/info-card/info-card-two";   
+// Blog card
 
 // 6.Icon Card
 @import "modules/icon-card/icon-card";
@@ -89,26 +89,15 @@
 // 10. Video Popup Card
 @import "modules/video-popup-card";
 
-// 11. Counter Card
-@import "modules/counter/counter-card";
-@import "modules/counter/counter-card-two";
-@import "modules/counter/counter-card-three";
+// 11. Counter Card 
 
 // 12. Process Step Card
-@import "modules/process-step/process-step";
-@import "modules/process-step/process-step-two";
-@import "modules/testimonial/testimonial-card";
 
-// 13. Testimonial Card
-@import "modules/testimonial/testimonial-card-two";
-@import "modules/testimonial/testimonial-card-three";
-@import "modules/testimonial/testimonial-slider-controls";
+// 13. Testimonial Card 
 
 // 14. Accordion Card
-@import "modules/accordion/accordion";
-@import "modules/accordion/accordion-style-two";
-@import "modules/accordion/accordion-style-three";
-@import "modules/accordion/accordion-style-four";
+@import "modules/accordion/accordion"; 
+@import "modules/accordion/accordion-style-one"; 
 
 // 15. Client Logo Card  
 
@@ -151,8 +140,7 @@
 // 27. Comment Form
 @import "modules/comment-form";
 
-// 28. Team member 
-@import "modules/team/team-slider-controls";
+// 28. Team member  
 
 // 29. Portfolio 
 
@@ -185,8 +173,7 @@
 
 // Analysis-area 
 
-// Counter-area
-@import "modules/counter/counter-area";
+// Counter-area 
 
 // Growth-area 
 

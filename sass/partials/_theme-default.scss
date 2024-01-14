@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   font-family: $body-font;
   color: $text-color;
@@ -48,39 +48,39 @@ h6 {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 80px;
   line-height: 110px;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 35px;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 42px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 15px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 13x;
   line-height: 28px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 label {
@@ -246,11 +246,11 @@ input.theme-btn {
   color: #fff;
   padding: 15px 25px;
   font-family: $heading-font;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 1.8px;
+  letter-spacing: 1px; 
   text-transform: uppercase;
   position: relative;
   z-index: 1;
@@ -262,7 +262,7 @@ input.theme-btn {
   border: 1px solid transparent;
 
   @include sm {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   i {
@@ -270,7 +270,7 @@ input.theme-btn {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
   }
 
   &:hover {
@@ -304,7 +304,7 @@ input.theme-btn {
       border-radius: 6px;
       background-color: $primary-color;
       color: #fff;
-      font-size: 16px;
+      font-size: 13px;
     }
   }
 }
@@ -315,7 +315,7 @@ input.theme-btn {
   color: #fff;
   padding: 15px 25px;
   font-family: $heading-font;
-  font-size: 18px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -331,7 +331,7 @@ input.theme-btn {
   border: 1px solid transparent;
 
   @include sm{
-    font-size: 16px;
+    font-size: 13px;
   }
 
   &:hover {
@@ -384,7 +384,7 @@ input.theme-btn {
 
   a {
     color: $white;
-    font-size: 24px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,7 +404,7 @@ input.theme-btn {
 
   p{
       font-family: 'Teko',sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 30px;
       letter-spacing: 0.1em;
@@ -417,7 +417,7 @@ input.theme-btn {
 .sub-title-center {
   h2{
       font-family: 'Teko',sans-serif;
-      font-size: 50px;
+      font-size: 39px;
       font-weight: 600;
       line-height: 60px;
       letter-spacing: 0em;
@@ -431,7 +431,7 @@ input.theme-btn {
 
   p{
       font-family: 'Teko',sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 30px;
       letter-spacing: 0.1em;
@@ -448,7 +448,7 @@ input.theme-btn {
 
   h2{
       font-family: 'Teko',sans-serif;
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 600;
       line-height: 60px;
       letter-spacing: 0em;
@@ -484,7 +484,7 @@ input.theme-btn {
       p{
           @include sm{
 
-              font-size: 15px;
+              font-size: 13px;
               line-height: 25px;
 
           }

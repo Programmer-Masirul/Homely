@@ -1,0 +1,39 @@
+       
+.card-wrapper{
+    &.style-two {
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        position: relative;
+        overflow: hidden;
+        width: auto;
+        position: relative;
+      
+        .icon-box{
+          
+          .icon{
+            font-size: 13px;
+          }
+          p{
+            margin-bottom: 0px;
+            font-family: $body-font;
+            font-size: 13px;
+            font-weight: 400;
+            color: $text-color;
+  
+          }
+        }
+  
+        .card-title{
+          font-size: 25px;
+          font-family: $heading-font;
+          font-weight: 500;
+        }
+  
+        .card-text{
+          font-size: 15px;
+          font-family: $body-font; 
+          color: $text-color;
+        }
+        }
+        }

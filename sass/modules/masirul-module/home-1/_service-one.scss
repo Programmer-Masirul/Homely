@@ -78,67 +78,6 @@
 
 }
 
-.card-wrapper {
-  -webkit-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  position: relative;
-  overflow: hidden;
-  width: 18rem;
-  position: relative;
-
-  .hover-content {
-    width: 17rem;
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
-    z-index: 1;
-    transform: translateY(100%);
-    -webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-
-    .card-text {
-      position: absolute;
-      background-color: $primary-color;
-      content: '';
-      top: 72%;
-      right: 3;
-      left: 0;
-
-      h3 {
-        font-family: 'Teko', sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 35px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #fff;
-      }
-
-      div {
-        .fa-circle-right {
-          font-size: 30px;
-          color: #fff;
-
-          &:hover {
-            color: #001;
-            transition: 1s;
-          }
-        }
-      }
-    }
-  }
-
-
-  &:hover .hover-content {
-    transform: translateY(-9%);
-    -webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-    border-radius: 0%;
-  }
-}
 
 
 // HEADLINE

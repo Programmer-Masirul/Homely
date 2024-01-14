@@ -17,7 +17,7 @@
     background-color: $black;
 
     @include rmaxwd(767) {
-      padding-top: 210px;
+      padding-top: 120px;
     }
   }
 
@@ -25,12 +25,12 @@
 
 .footer-widget-title {
   font-family: $heading-font;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 26px;
   color: $white;
   position: relative;
   margin-bottom: 26px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer-widget {
@@ -144,7 +144,7 @@
       a {
         color: $white-100;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 15px;
         @include transition;
         position: relative;
 
@@ -195,8 +195,8 @@
 
         .contact-text {
           color: $white-100;
-          font-size: 18px;
-          line-height: 24px;
+          font-size: 15px;
+          line-height: 22px;
           overflow: hidden;
 
           a {
@@ -212,8 +212,8 @@
           p,
           a {
             color: $white-100;
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 15px;
+            line-height: 22px;
             display: inline-block;
             width: 100%;
             margin-bottom: 0;
@@ -224,51 +224,7 @@
     }
   }
 
-  // Footer Latest News
-  .widget_latest_post {
-    ul {
-      li {
-        .latest-post-thumb {
-          width: 60px;
-          height: 60px;
-        }
 
-        .latest-post-desc {
-          .latest-post-title {
-            margin-bottom: 8px;
-            font-size: 16px;
-            line-height: 22px;
-            color: $white;
-            font-weight: 700;
-
-            a {
-              font-size: 16px;
-              line-height: 22px;
-              color: $white;
-              position: relative;
-              text-transform: capitalize;
-              font-weight: 700;
-              @include transition;
-
-              &:hover {
-                color: $primary-color;
-                @include transition;
-              }
-            }
-          }
-
-          .latest-post-meta {
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            font-weight: 400;
-            gap: 8px;
-            color: $white-100;
-          }
-        }
-      }
-    }
-  }
 }
 
 // Footer Bottom Section
@@ -289,7 +245,7 @@
 
     li {
       a {
-        font-size: 16px;
+        font-size: 15px;
         text-transform: capitalize;
         color: $white-100;
         @include transition;
@@ -319,10 +275,12 @@
     p {
       color: $white-100;
       margin-bottom: 0;
+      font-size: 15px;
 
       a {
         color: $white;
         font-weight: 700;
+        font-size: 15px;
 
         &:hover {
           color: $primary-color;
@@ -331,223 +289,10 @@
     }
   }
 
-  .credit-text {
-    p {
-      color: $white-100;
-      margin-bottom: 0;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 10px;
-    }
-
-    a {
-      color: $primary-color;
-    }
+  .footer-bottom-menu{
+    font-size: 15px;
   }
+    
 }
-
-// Footer Subscribe
-.subscribe-form-area {
-  position: relative;
-  z-index: 99;
-}
-
-.subscribe-area {
-  background-color: $orange-color;
-  border-radius: 18px;
-  padding: 64px 90px 64px 70px;
-  z-index: 2;
-  position: relative;
-  overflow: hidden;
-
-  @include md {
-    padding: 40px;
-  }
-
-  @include sm {
-    padding: 40px;
-  }
-
-  .triangle-shape {
-    width: 280px;
-    height: 280px;
-    background-color: $primary-color;
-    border-radius: 28px;
-    position: absolute;
-    right: -32px;
-    bottom: -80px;
-    transform: rotate(39deg);
-    z-index: -1;
-  }
-
-  .shape-bg {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-
-    img {
-      object-fit: cover;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-    }
-  }
-
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    .short-title {
-      font-size: 21px;
-      font-weight: 700;
-      color: $white;
-      margin-bottom: 0;
-    }
-
-    .subscribe-title {
-      color: $white;
-      text-transform: capitalize;
-      margin-bottom: 0;
-      font-size: 48px;
-      line-height: 60px;
-
-      @include rmaxwd(375) {
-        font-size: 34px !important;
-      }
-
-      @include md {
-        font-size: 40px;
-        line-height: 42px;
-      }
-
-      @include sm {
-        font-size: 36px;
-        line-height: 42px;
-      }
-    }
-
-    .text {
-      font-size: 22px;
-      color: $white;
-      margin-bottom: 0;
-      margin-top: 12px;
-    }
-  }
-
-  .subscribe-inner-area {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-    @include sm {
-      flex-direction: column;
-    }
-
-    .subscribe-form-wrapper {
-      margin-top: -12px;
-    }
-
-    .content-wrapper,
-    .subscribe-form-wrapper {
-      width: 50%;
-
-      @include sm {
-        width: 100%;
-      }
-    }
-  }
-}
-
-.subscribe-form-widget {
-  position: relative;
-
-  .mc4wp-form-fields {
-    display: flex;
-    background-color: $white;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-
-  .single-field {
-    flex-grow: 1;
-
-    input {
-      color: $black-300;
-      height: 72px;
-      padding: 0 30px;
-      font-size: 18px;
-      border-radius: 50px;
-      width: 100%;
-    }
-
-    *::-webkit-input-placeholder {
-      color: $black-300;
-    }
-
-    *:-moz-placeholder {
-      color: $black-300;
-      opacity: 1;
-    }
-
-    *::-moz-placeholder {
-      color: $black-300;
-      opacity: 1;
-    }
-
-    *:-ms-input-placeholder {
-      color: $black-300;
-    }
-
-    *::-ms-input-placeholder {
-      color: $black-300;
-    }
-
-    *::placeholder {
-      color: $black-300;
-    }
-  }
-
-  .submit-btn {
-    background-color: $white;
-    color: $orange-color;
-    background: -webkit-linear-gradient(#e30008, #faae00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    padding: 0 35px;
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  // Form Submit Message
-  .mc4wp-response {
-    position: relative;
-    top: 15px;
-
-    .mc4wp-alert {
-
-      &.mc4wp-error,
-      &.mc4wp-success,
-      &.mc4wp-notice {
-        p {
-          color: #fff;
-          position: relative;
-        }
-      }
-    }
-  }
-}
-
+ 
  

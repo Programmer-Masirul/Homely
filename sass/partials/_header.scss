@@ -89,7 +89,7 @@
         display: block;
         font-family: $body-font;
         font-weight: 300;
-        font-size: 	15px;
+        font-size: 	14px;
         list-style-type: none;
         border-bottom: 0.3px solid $gray-400;
         @include transition;
@@ -121,7 +121,7 @@
   .nav-link{
     font-family: $body-font;
     font-weight: 300;
-    font-size: 	18px;
+    font-size: 	15px;
     color: $black;
 
     &:hover{
@@ -129,7 +129,7 @@
     }
 
     @include lg{
-    font-size: 	15px;
+    font-size: 	14px;
     }
   }
 
