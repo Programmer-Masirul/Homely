@@ -3,10 +3,32 @@
     "use strict";
     $(document).ready(function () {
 
+        // OwlCarousel
+        $(document).ready(function(){$('.owl-carousel').owlCarousel({
+            loop:true,
+            navText: false,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3, 
+                },
+                1000:{
+                    items:5, 
+                }
+            }
+        })
+          });
 
-
-
-        /*
+  
+            /*
        Jquery Mobile Menu
        ============================*/
         // $('#main-menu').meanmenu({
