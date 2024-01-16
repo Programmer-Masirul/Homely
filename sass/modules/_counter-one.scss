@@ -1,0 +1,76 @@
+
+.content-and-icon{
+    padding: 2rem;
+    margin-top: 100px;
+    text-align: center;
+    @include sm{
+        margin-top: 0px;
+        padding: 1rem;
+        text-align: center;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        @include sm{
+          justify-content: start;
+        }
+        .icn{
+            i{
+                width: 6.5rem;
+                height: 6.5rem;
+                padding: 40px 50px;
+                font-size: 30px;
+                border-radius:50%;
+                color: $white;
+                background: linear-gradient(to right, #632A2C, $primary-color);
+
+                @include sm{
+                    font-size: 30px;
+                    color: $white;
+                    
+                }
+              }     
+
+            .border-animation{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 6.5rem;
+                height: 6.5rem;
+                color: $black;
+                border: 0.55rem solid $primary-color;
+                border-radius: 50%;
+                animation: pulseBorder 2s linear infinite;
+
+
+                &--border-1{
+                    animation-delay: 1.5s;
+                }
+
+                &--border-2{
+                    animation-delay: 2s;
+                }
+            }
+            
+        }
+    }
+
+    .content{
+        p{
+            font-family: 'Manrope';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align:right;
+            color: #FFFFFF;
+
+            @include sm{
+                font-size: 13px;
+                text-align: center;
+
+            }
+          }
+    }
+  }

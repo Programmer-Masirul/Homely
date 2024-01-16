@@ -107,11 +107,39 @@
 
     .blog-inner-wrapper {  
       .single-post {   
-        margin: 0 auto;
+        margin: 0 auto; 
 
-
+    } 
+    
     }
-  }
+
+     
+    .blog-pagination{ 
+      display: flex;
+      margin-top: 50px;
+
+      .blog-page-item{
+        display: block;
+        padding: 10px;
+        background: $primary-color;
+
+
+
+
+        .blog-page-link{ 
+          display: block;
+          color: $white!important;
+          &:hover{
+            color: $gray!important;
+          }       
+          
+          &.active{ 
+            color: $text-color!important;
+          }
+        }
+
+      }
+    } 
 
 
   }

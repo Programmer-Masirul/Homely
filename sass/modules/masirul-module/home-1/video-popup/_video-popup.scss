@@ -1,0 +1,50 @@
+.video-popup-container{
+    .video-box{
+        position: relative;
+        a{
+            @include AbsoluteCenter;
+            span{
+
+                i{
+                    width: 100px;
+                    height: 100px;
+                    padding: 40px 40px;
+                    font-size: 30px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    background: linear-gradient(to right, #632A2C, #f2c94c);
+                }
+            }
+        }
+
+        .border-animation{ 
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px; 
+            border: 7px solid $white;
+            border-radius: 50%;
+            animation: pulse-border 1.5s linear infinite;
+
+            &--border-1{
+                animation-delay: 1s;
+            }
+
+            &--border-2{
+                animation-delay: 1.5s;
+            }
+        }
+
+        @keyframes pulse-border{
+            0%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+    }
+}
