@@ -1,0 +1,20 @@
+.blog-details-area{
+
+    .calendar-area{ 
+        display: flex;
+
+        .icon-content{
+            margin-right: 70px;
+            margin-bottom: 48px;
+
+            @include md{ 
+                margin-right: 30px;
+              }
+
+            @include sm{ 
+              margin-right: 15px;
+            }
+        }
+    }
+ 
+}

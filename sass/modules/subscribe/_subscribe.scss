@@ -2,12 +2,9 @@
     padding: 50px 10px;
     background: #000;
     .subscribe-wrapper{
-        padding: 50px 30px;
+        padding: 50px 10px;
         background: $white;
-        border-radius: 5px;
-        display: flex; 
-        align-items: center;
-        justify-content: center;
+        border-radius: 5px; 
 
     .subscribe-area-content{  
         .form-control {
@@ -15,6 +12,10 @@
             padding: 15px 25px;
             background: $gray-50;
             outline: 0;
+
+            @include sm{ 
+             width: 280px;
+            }
         }
       
     }

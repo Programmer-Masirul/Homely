@@ -1,0 +1,38 @@
+    .recent-post-box{
+      margin-bottom: 20px;
+      .recent-post{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .image{ 
+          img{
+            height: fit-content; 
+            @include transition;
+          }
+        }
+        .recent-icon-box{ 
+          .icon-text{
+            font-size: 15px;
+
+            @include lg{ 
+            font-size: 11px;
+            }
+
+            @include sm{
+              font-size: 10px;
+            }
+          } 
+        }
+
+
+        &:hover{
+        
+          .image{ 
+            img{
+              transform: scale(1.1);
+            }
+          }
+          }
+        }
+      }

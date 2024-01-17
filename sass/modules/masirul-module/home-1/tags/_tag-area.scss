@@ -1,0 +1,29 @@
+.tag-area{
+    
+    .secondary-theme-btn{
+        background: transparent;
+        border: 1px solid $secondary-color;
+        color: $gray;
+        padding: 8px 12px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: inline-block;
+        text-align: center;
+        font-size: 15px;
+
+        @include lg{
+          padding: 7px 10px;
+          font-size: 13px;
+        }
+
+        @include sm{
+          padding: 6px 9px;
+          font-size: 13px;
+        }
+
+        &:hover{ 
+          background: $black-2;
+          color: $white;
+        }
+      }
+}

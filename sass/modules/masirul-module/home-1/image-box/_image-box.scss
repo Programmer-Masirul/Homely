@@ -1,0 +1,43 @@
+.recent-image-box{
+
+
+    .recent-icon-box{ 
+        margin-right: 30px;
+        .icon-text{
+          font-size: 15px;
+    
+          @include lg{ 
+          font-size: 14px;
+          }
+    
+          @include sm{
+            font-size: 13px;
+          }
+        }      
+        
+        .icon-content{ 
+            display: flex;
+            .icon{
+              margin-right: 10px;
+              i{
+                font-size: 13px;
+              }
+            }
+        
+            .content{
+            font-size: 15px;
+        
+            @include lg{ 
+            font-size: 14px;
+            }
+        
+            @include sm{
+              font-size: 11px;
+            }
+            }
+          }
+    
+      }
+}
+
+      

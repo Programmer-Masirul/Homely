@@ -120,12 +120,12 @@ a:focus {
 
 a,
 button {
-  color: $primary-color;
+  color: $black;
   outline: medium none;
   @include transition;
 
   &:hover {
-    color: $black;
+    color: $primary-color;
     @include transition;
   }
 }

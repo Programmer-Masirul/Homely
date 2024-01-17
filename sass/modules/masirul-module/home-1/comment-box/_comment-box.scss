@@ -1,0 +1,14 @@
+.recent-comment-box{
+    margin-bottom: 20px;
+    .recent-comment{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .image{ 
+        img{
+          height: fit-content; 
+        }
+      }
+      }
+    }

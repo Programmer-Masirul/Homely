@@ -1,106 +1,11 @@
   // START:: LATEST BLOG
   .blog-area {
-    .categories{
+    .sidebar{
       padding: 20px 30px;
       border-top: 5px solid $primary-color;
       border-left: 5px solid $primary-color;
       border-radius: 10px; 
 
-      .link-area{
-
-       .topic-wise{
-
-        ul{
-          li{
-            font-size: 14px;
-          }
-        }
-       }
-      }
-
-    .recent-post-box{
-      margin-bottom: 20px;
-      .recent-post{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .image{ 
-          img{
-            height: fit-content; 
-          }
-        }
-        .recent-icon-box{
-          color: $text-color;
-          .icon-text{
-            font-size: 15px;
-
-            @include lg{ 
-            font-size: 11px;
-            }
-
-            @include sm{
-              font-size: 10px;
-            }
-          }
-        
-          .icon-date{ 
-            display: flex;
-            .icon{
-              margin-right: 10px;
-              i{
-                font-size: 13px;
-              }
-            }
-
-            .date{
-            font-size: 14px;
-
-            @include lg{ 
-            font-size: 9px;
-            }
-
-            @include sm{
-              font-size: 8px;
-            }
-            }
-          }
-
-          &:hover{
-            color: $primary-color;
-          }
-
-        }
-        }
-      }
-
-            
-      .secondary-theme-btn{
-        background: transparent;
-        border: 1px solid $secondary-color;
-        color: $gray;
-        padding: 8px 12px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-        display: inline-block;
-        text-align: center;
-        font-size: 15px;
-
-        @include lg{
-          padding: 7px 10px;
-          font-size: 13px;
-        }
-
-        @include sm{
-          padding: 6px 9px;
-          font-size: 13px;
-        }
-
-        &:hover{ 
-          background: $black-2;
-          color: $white;
-        }
-      }
 
 
     }
