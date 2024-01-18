@@ -8281,6 +8281,21 @@ ul.children {
   color: #666666 !important;
 }
 
+.blog-details-area .sidebar input[type=text] {
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #f2c94c;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.blog-details-area .sidebar input[type=text]:focus {
+  border: 2px solid #f2c94c;
+  width: 80%;
+}
 .blog-details-area .calendar-area {
   display: flex;
 }
@@ -8474,6 +8489,7 @@ ul.children {
   background: #F5F5F5;
   border-bottom: 5px solid transparent;
   border-radius: 5px;
+  height: 170px;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -8517,6 +8533,103 @@ ul.children {
   transform: rotate(-360deg);
   background: #f2c94c;
   color: #ffffff;
+}
+
+.sign-in-area {
+  /* Full-width input fields */
+  /* Set a style for all buttons */
+  /* Extra styles for the cancel button */
+  /* Center the image and position the close button */
+  /* The Modal (background) */
+  /* Modal Content/Box */
+  /* The Close Button (x) */
+  /* Add Zoom Animation */
+  /* Change styles for span and cancel button on extra small screens */
+}
+.sign-in-area input[type=text], .sign-in-area input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.sign-in-area .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.sign-in-area img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.sign-in-area .container {
+  padding: 16px;
+}
+.sign-in-area span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.sign-in-area .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.sign-in-area .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+.sign-in-area .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.sign-in-area .close:hover,
+.sign-in-area .close:focus {
+  color: red;
+  cursor: pointer;
+}
+.sign-in-area .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 300px) {
+  .sign-in-area span.psw {
+    display: block;
+    float: none;
+  }
+  .sign-in-area .cancelbtn {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
