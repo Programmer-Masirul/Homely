@@ -3,6 +3,8 @@
     "use strict";
     $(document).ready(function () {
 
+
+
         // OwlCarousel
         $(document).ready(function(){$('.owl-carousel').owlCarousel({
             loop:true,
@@ -535,6 +537,11 @@ const accordionItemHeaders = document.querySelectorAll(
         // document.querySelector(".slide-one").appendChild(copy);
         // let copytwo = document.querySelector(".logo-slide").cloneNode(true);
         // document.querySelector(".slide-two").appendChild(copytwo);
+
+        
+
+
+
 
     });
 })(jQuery);

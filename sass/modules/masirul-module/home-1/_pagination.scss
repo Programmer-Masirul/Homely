@@ -1,0 +1,43 @@
+.main-pagination{ 
+    display: flex; 
+    margin-top: 50px;
+
+    .main-page-item{
+      display: block;
+      padding: 10px 20px;
+      margin: 0px 5px;
+      background: $gray-100;
+      @include transition; 
+
+      &.active { 
+        background: $primary-color;
+        color: $white!important;
+
+        .main-page-link{  
+            color: $white;    
+            
+          }
+      }
+  
+      &:hover{
+          background: $primary-color;;
+          color: $white!important;
+
+          .main-page-link{  
+            color: $white;    
+            
+          }
+      } 
+
+
+
+
+      .main-page-link{ 
+        display: block;
+        color: $black-2;    
+        
+      }      
+
+
+    }
+  } 

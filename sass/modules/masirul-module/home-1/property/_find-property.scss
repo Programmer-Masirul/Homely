@@ -1,11 +1,11 @@
 .find-property{
 
     .card-wrapper{
-        border-radius: 20px;
+        border-radius: 20px; 
         .card-image{
             position: relative; 
             .img{
-                position: relative;
+                position: relative; 
 
                 &:before {
                     content: "";
@@ -15,7 +15,7 @@
                     bottom: 0;
                     left: 0;
                     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));  
-                    pointer-events: none;  
+                    pointer-events: none;   
                   }
             }
             .image-content{

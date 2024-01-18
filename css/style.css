@@ -8261,25 +8261,6 @@ ul.children {
 .blog-area .blog-inner-wrapper .single-post {
   margin: 0 auto;
 }
-.blog-area .blog-pagination {
-  display: flex;
-  margin-top: 50px;
-}
-.blog-area .blog-pagination .blog-page-item {
-  display: block;
-  padding: 10px;
-  background: #f2c94c;
-}
-.blog-area .blog-pagination .blog-page-item .blog-page-link {
-  display: block;
-  color: #ffffff !important;
-}
-.blog-area .blog-pagination .blog-page-item .blog-page-link:hover {
-  color: #31373f !important;
-}
-.blog-area .blog-pagination .blog-page-item .blog-page-link.active {
-  color: #666666 !important;
-}
 
 .blog-details-area .sidebar input[type=text] {
   width: 200px;
@@ -8630,6 +8611,143 @@ ul.children {
   .sign-in-area .cancelbtn {
     width: 100%;
   }
+}
+
+.main-pagination {
+  display: flex;
+  margin-top: 50px;
+}
+.main-pagination .main-page-item {
+  display: block;
+  padding: 10px 20px;
+  margin: 0px 5px;
+  background: #f3f4f8;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.main-pagination .main-page-item.active {
+  background: #f2c94c;
+  color: #ffffff !important;
+}
+.main-pagination .main-page-item.active .main-page-link {
+  color: #ffffff;
+}
+.main-pagination .main-page-item:hover {
+  background: #f2c94c;
+  color: #ffffff !important;
+}
+.main-pagination .main-page-item:hover .main-page-link {
+  color: #ffffff;
+}
+.main-pagination .main-page-item .main-page-link {
+  display: block;
+  color: #31373f;
+}
+
+.image-slideshow {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  /* Position the image container (needed to position the left and right arrows) */
+  /* Hide the images by default */
+  /* Add a pointer when hovering over the thumbnail images */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* Container for image text */
+}
+.image-slideshow img {
+  vertical-align: middle;
+}
+.image-slideshow .container {
+  position: relative;
+}
+.image-slideshow .mySlides {
+  display: none;
+}
+.image-slideshow .cursor {
+  cursor: pointer;
+}
+.image-slideshow .prev,
+.image-slideshow .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 10px 20px;
+  margin-top: -50px;
+  color: #31373f !important;
+  background: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid #F5F5F5;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 3;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.image-slideshow .next {
+  right: 5%;
+  border-radius: 50%;
+}
+.image-slideshow .prev {
+  left: 5%;
+  border-radius: 50%;
+}
+.image-slideshow .prev:hover,
+.image-slideshow .next:hover {
+  color: #ffffff !important;
+  background: #f2c94c;
+}
+.image-slideshow .numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.image-slideshow .caption-container {
+  text-align: center;
+  background-color: #f2c94c;
+  padding: 2px 16px;
+  color: #ffffff;
+}
+.image-slideshow .overview {
+  position: absolute;
+  top: 63%;
+  left: 55%;
+  transform: translate(-63%, -55%);
+  padding: 10px 10px;
+  background: #f3f4f8;
+  z-index: 99;
+  /* Six columns side by side */
+  /* Add a transparency effect for thumnbail images */
+}
+.image-slideshow .overview .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.image-slideshow .overview .column {
+  float: left;
+  width: 16.66%;
+}
+.image-slideshow .overview .demo {
+  opacity: 0.6;
+  height: 42px;
+}
+.image-slideshow .overview .active,
+.image-slideshow .overview .demo:hover {
+  opacity: 1;
+  border: 1px solid #f2c94c;
 }
 
 /*# sourceMappingURL=style.css.map */
