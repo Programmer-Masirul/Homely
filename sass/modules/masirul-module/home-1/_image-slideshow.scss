@@ -2,6 +2,10 @@
     position: relative;
     height: 600px;
     overflow: hidden;
+
+    @include sm{
+        height: 500px;
+    }
         
     img {
         vertical-align: middle;
@@ -40,6 +44,39 @@
         -webkit-user-select: none;
         z-index: 3;
         @include transition;
+
+        @include xl{
+            padding: 0px 10px;
+            margin-top: -90px;
+            font-size: 12px;
+        }
+
+        @include lg{
+            padding: 0px 10px;
+            margin-top: -110px;
+            font-size: 12px;
+        }
+
+        @include md{
+            padding: 0px 10px;
+            margin-top: -125px;
+            font-size: 12px;
+        }
+        @include sm{
+            padding: 0px 10px;
+            margin-top: -130px;
+            font-size: 10px;
+        }
+        @include rmaxwd(576){ 
+            padding: 0px 10px;
+            margin-top: -140px;
+            font-size: 8px;
+        }
+        @include rmaxwd(370){ 
+            padding: 0px 10px;
+            margin-top: -160px;
+            font-size: 8px;
+        }
     }
     
     /* Position the "next button" to the right */
@@ -75,6 +112,11 @@
         background-color: $primary-color;
         padding: 2px 16px;
         color: $white;
+
+        @include sm{
+            font-size: 10px;
+            padding: 0px;
+        }
     }
     
     .overview{
@@ -85,6 +127,58 @@
         padding: 10px 10px;
         background: $gray-100;
         z-index: 99;
+
+        @include rmaxwd(1400){ 
+            top: 50%;
+            left: 52%; 
+            transform: translate(-50%,-52%);
+        }
+
+        @include lg{
+            top: 40%;
+            left: 45%;
+            transform: translate(-40%,-45%);
+        }
+
+        @include md{
+            top: 32%;
+            left: 38%;
+            transform: translate(-32%,-38%);
+            padding: 5px 5px;
+        }
+
+        @include sm{
+            top: 24%;
+            left: 33%;
+            transform: translate(-24%,-33%);
+            padding: 5px 5px;
+        }
+
+        @include rmaxwd(576){
+            top: 24%;
+            left: 31%;
+            transform: translate(-24%,-31%);
+            padding: 1px 4px;
+        }
+
+        @include rmaxwd(425){
+            top: 20%;
+            left: 28%;
+            transform: translate(-20%,-28%);
+            padding: 1px 4px;
+        }
+
+        @include rmaxwd(376){
+            top: 17%;
+            left: 26%;
+            transform: translate(-17%,-26%);
+            padding: 1px 4px;
+        }
+
+        @include rmaxwd(350){
+            display: none;
+        }
+
 
         .row:after {
             content: "";
@@ -102,6 +196,14 @@
         .demo {
             opacity: 0.6;
             height: 42px;
+
+            @include md{
+                height: 25px;
+            }
+
+            @include sm{
+                height: 15px;
+            }
         }
         
         .active,

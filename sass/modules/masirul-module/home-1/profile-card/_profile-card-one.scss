@@ -1,0 +1,67 @@
+.profile-card {
+
+    &.style-one{
+        .profile-card-wrapper{
+            margin-top: 50px;
+            padding: 100px 30px;
+            background: $secondary-color;
+
+            .profile-picture{
+                text-align: center;
+        
+                img{
+                    width: 50%;
+                    border-radius: 50%;
+                }
+            }
+        
+            .profile-content{
+                text-align: center;
+                margin: 30px 0px 15px;
+                
+                .content-title{
+                  font-family: $heading-font;
+                  font-size: 40px;
+                  color: $white;
+                  font-weight: 500;
+        
+                }
+        
+                .content-subtitle{
+                    font-family: $body-font;
+                    font-size: 15px;
+                    color: $white-100;
+                    font-weight: 500;
+                }
+        
+            }
+        
+            .social-profile{ 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                .social-links{ 
+                    display: flex; 
+        
+                    a{
+                      i{ 
+                        display: block;
+                        margin-right: 10px;
+                        @include transition;
+            
+                        &:hover{
+                            transform: rotate(360deg);
+                            color: $primary-color;
+                        }
+            
+                      }
+                    }
+        
+                }
+            }
+
+        }
+    }
+
+}
